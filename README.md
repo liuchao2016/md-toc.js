@@ -22,7 +22,9 @@ md-toc.js
 ```html
 <script src="http://isprite.duapp.com/lib/md-toc.js"></script>
 <script type="text/javascript">
+window.onload=function(){
     new Toc('post',options);
+}
 </script>
 ```
 
@@ -40,12 +42,14 @@ md-toc.js
 
 ```html
 <script type="text/javascript">
+window.onload=function(){
     new Toc( 'post',{
         'level':3,
         'top':200,
         'class':'toc',
         'targetId':'toc'
     } );
+}
 </script>
 ```
 
